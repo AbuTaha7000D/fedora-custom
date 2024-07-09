@@ -1,0 +1,15 @@
+
+
+######################################################
+# ALIAS'S AND SCRIPTS BY ME
+#######################################################
+alias supdate='sudo dnf update -y; sudo dnf upgrade --refresh'
+alias edge='flatpak run com.microsoft.Edge'
+alias chrome='flatpak run com.google.Chrome'
+alias ff='fastfetch'
+alias snano='sudo nano'
+alias refresh='source ~/.bashrc'
+alias update-grub='sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg'
+alias dnf='sudo dnf'
+
+#######################################################

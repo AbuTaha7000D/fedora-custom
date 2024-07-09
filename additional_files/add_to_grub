@@ -1,0 +1,15 @@
+GRUB_TIMEOUT="10"
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT="saved"
+GRUB_DISABLE_SUBMENU="true"
+#GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rd.driver.blacklist=nouveau modprobe.blacklist=nouveau rhgb quiet rd.driver.blacklist=nou>
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG="false"
+GRUB_GFXMODE="1920x1080"
+
+GRUB_THEME="/boot/grub2/themes/fedora2/theme.txt"
+#GRUB_THEME="/boot/efi/EFI/fedora/themes/fedora/theme.txt"
+
+export GRUB_COLOR_NORMAL="light-gray/black"
+export GRUB_COLOR_HIGHLIGHT="magenta/black"
