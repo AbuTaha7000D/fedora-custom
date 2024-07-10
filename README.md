@@ -29,7 +29,7 @@ git clone https://github.com/AbuTaha7000D/fedora-custom.git
 2. **Run the installation script:**
 
 ```bash
-cd fedora-custom && sudo ./install.sh
+cd fedora-custom && ./install.sh
 ```
 
 **This script will:**

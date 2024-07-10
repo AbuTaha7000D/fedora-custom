@@ -107,7 +107,7 @@ fc-cache -f -v
 # Clone mybash repo
 ##################################
 mkdir -p ~/Desktop/github/
-git clone https://github.com/christitustech/mybash ~/Desktop/github/
+git clone https://github.com/christitustech/mybash ~/Desktop/github/mybash/
 bash ~/Desktop/github/mybash/setup.sh
 
 ##################################
@@ -127,7 +127,8 @@ source ~/.bashrc
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 sudo mkdir -p /boot/efi/EFI/fedora/themes/
 sudo cp -rf ./additional_files/fedora/  /boot/efi/EFI/fedora/themes/
-sudo cp -f ./additional_files/grub /etc/default/
+sudo cp -f ./additional_files/add_to_grub /etc/default/
+sudo mv -f /etc/default/add_to_grub /etc/default/grub
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
 printf "YOU NEED TO REBOOT YOU SYSTEM NOW...\n\n"
